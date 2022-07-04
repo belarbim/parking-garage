@@ -4,7 +4,8 @@ The aim of this application is to be able to manage garages which provides spot 
 ## Data model
 Each garage identified by:
 - name: name of the garage, must be unique
-- price per hour for each size of spot
+- price per hour for each size of spot.
+
 A garage contains multiple spots.
 
 Each spot identified by:
