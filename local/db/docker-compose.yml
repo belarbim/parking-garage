@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+
+  db_audit:
+    image: postgres:9.5
+    restart: always
+    environment:
+      - POSTGRES_USER=tec_garage
+      - POSTGRES_PASSWORD=tec_garage
+      - POSTGRES_DB=parking-garage
+    volumes:
+      - db_data:/var/lib/postgresql/parking_garage
+    # optional port
+    ports: ["5432:5432"]
+
+volumes:
+  db_data:
